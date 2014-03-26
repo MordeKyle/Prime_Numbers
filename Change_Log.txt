@@ -1,0 +1,7 @@
+﻿***CHANGE LOG***
+
+Version: 1.0 Confused Robin
+03/26/2014 @ 14:05
+•Added TB and button to form
+•Added isPrime boolean function
+•added on click that calls inPrime
