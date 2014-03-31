@@ -1,5 +1,12 @@
 ﻿***CHANGE LOG***
 
+Version: 1.1 Accomplished Robin
+03/31/2014 @ 02:05
+•fixed if statements in isPrime function (boolean)
+•added icon and fixed form text
+•resized the form and repositioned text box and button
+•added instructions
+
 Version: 1.0 Confused Robin
 03/26/2014 @ 14:05
 •Added TB and button to form

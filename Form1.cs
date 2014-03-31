@@ -25,20 +25,24 @@ namespace Prime_Numbers
 
         private Boolean isPrime(int userInput)
         {
-            if (userInput > 0 && userInput <= 3)
+            if (userInput > 0 && userInput <= 3) //check to see if user input is number 1, 2 or 3
             {
                 return true;
             }
-            if (userInput % 2 == 0)
+            else if (userInput % 2 == 0) //check to see if number is even
             {
                 return false;
             }
-            for (int loopCounter = 3; loopCounter < userInput; loopCounter++)
-            {
-                if (userInput % loopCounter == 0)
+            else
+            { //if preceding two conditions are both false, start dividing number to see if it is divisible by anything
+                //but itself and 1 or 2.
+                for (int loopCounter = 3; loopCounter < userInput; loopCounter++)
                 {
-                    return false;
-                }
+                    if (userInput % loopCounter == 0)
+                    {
+                        return false;
+                    }
+                } 
             }
             return true;
         }
