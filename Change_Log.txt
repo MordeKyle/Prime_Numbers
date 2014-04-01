@@ -1,5 +1,11 @@
 ﻿***CHANGE LOG***
 
+Version: 1.11 Accomplished Robin
+04/01/2014 @ 12:40
+•added the divisibleBy variable (int) to disbplay the first
+	number that non prime is divisible by
+•loopCounter in for loop was changed from "++" to "+= 2"
+
 Version: 1.1 Accomplished Robin
 03/31/2014 @ 02:05
 •fixed if statements in isPrime function (boolean)

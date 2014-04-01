@@ -18,6 +18,8 @@ namespace Prime_Numbers
 {
     public partial class Form1 : Form
     {
+        private int divisibleBy;
+
         public Form1()
         {
             InitializeComponent();
@@ -31,15 +33,17 @@ namespace Prime_Numbers
             }
             else if (userInput % 2 == 0) //check to see if number is even
             {
+                divisibleBy = 2;
                 return false;
             }
             else
             { //if preceding two conditions are both false, start dividing number to see if it is divisible by anything
                 //but itself and 1 or 2.
-                for (int loopCounter = 3; loopCounter < userInput; loopCounter++)
+                for (int loopCounter = 3; loopCounter < userInput; loopCounter += 2)
                 {
                     if (userInput % loopCounter == 0)
                     {
+                        divisibleBy = loopCounter;
                         return false;
                     }
                 } 
@@ -57,7 +61,7 @@ namespace Prime_Numbers
             }
             else
             {
-                MessageBox.Show(userInput + " " + "is not a prime number."); //display results of false raturn from isPrime
+                MessageBox.Show(userInput + " " + "is divisible by" + " " + divisibleBy + "."); //display results of false raturn from isPrime
             }
         }
     }
